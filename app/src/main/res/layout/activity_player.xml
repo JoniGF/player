@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.walter.player.Player">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@android:color/darker_gray"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="350dp" />
+
+        <Button
+            android:id="@+id/play"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/seekBar"
+            android:layout_centerHorizontal="true"
+            android:text="||" />
+
+        <Button
+            android:id="@+id/ffsig"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/play"
+            android:layout_alignBottom="@+id/play"
+            android:layout_toEndOf="@+id/play"
+            android:layout_toRightOf="@+id/play"
+            android:text="ff" />
+
+        <Button
+            android:id="@+id/ffant"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/play"
+            android:layout_toLeftOf="@+id/play"
+            android:layout_toStartOf="@+id/play"
+            android:text="Fb" />
+
+        <Button
+            android:id="@+id/ant"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/ffant"
+            android:layout_alignBottom="@+id/ffant"
+            android:layout_toLeftOf="@+id/ffant"
+            android:layout_toStartOf="@+id/ffant"
+            android:text="ant" />
+
+        <Button
+            android:id="@+id/sig"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/ffsig"
+            android:layout_alignBottom="@+id/ffsig"
+            android:layout_toEndOf="@+id/ffsig"
+            android:layout_toRightOf="@+id/ffsig"
+            android:text="prox" />
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
